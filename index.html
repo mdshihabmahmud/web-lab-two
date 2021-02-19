@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		
+		}
+		body{
+			background-color: #1D8348;
+
+		}
+		h1{
+			text-align: center;
+			margin-top: 50px;
+			font-weight: 800;
+		}
+	.frm1{
+			text-align: center;
+			margin: auto 300px;
+			padding-top: 100px;
+
+		}
+		input{
+			width: 300px;
+			border-radius: 50px;
+		}
+		.reset{
+			background-color: gray;
+			font-size: 20px;
+			font-weight: 800;
+		}
+		.resetone{
+			background-color: #2471A3;
+			font-size: 20px;
+			font-weight: 800;
+		}
+	</style>
+</head>
+<body>
+
+	
+<h1><u>Currency Converter</u></h1>
+
+<form class="frm1" name="converter">	
+
+BDT: <input id="currency" type="number" name ="bdt"> 
+<input class="resetone" type="button" Value = "Convert" onclick="currencyConverter(converter.bdt.value)"><br>
+<br>
+<h2>Canadian Dollar:</h2> <input id="cad"><br>
+<br>
+<h2>Malaysian Ringgit:</h2> <input id="myr"><br>
+<br>
+<h2>Pakistani Rupee:</h2> <input id="pkr"><br>
+<br>
+<input class="reset" type="reset" Value="Reset"><br>
+</form>
+<script src="js/main.js"></script>
+</body>
+</html>
