@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+</head>
+<body style="background-image: url(img/pic.jpg);">
+	<div style="text-align: center; margin-top: 150px;">
+		
+		<h1>Currency Converter</h1><br>
+<h2>Select Currency</h2>
+<select style="width: 150px;" name="currency" id="inputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+	<option value="taka">BDT</option>
+	<option value="ruppe">RUPEE</option>
+	<option value="dollar">USD</option>
+	<option value="riyal">RIYAL</option>
+</select>
+<input type="number" id="firstCurrency" name="first" onclick="firstToSecond()" oninput="firstToSecond()">
+
+
+
+<h2>Convert Currency</h2>
+<select style="width: 150px;" name="" id="outputCurrency" onchange="firstToSecond()" onclick="firstToSecond()" oninput="firstToSecond()">
+	<option value="taka1">BDT</option>
+	<option value="ruppe1">RUPEE</option>
+	<option value="dollar1">USD</option>
+	<option value="riyal1">RIYAL</option>
+</select>
+<input type="number"  id="SecondCurrency" name="second">
+	</div>
+
+
+
+<script type="text/javascript">
+	
+function firstToSecond(){
+	var input1 = document.getElementById("firstCurrency").value;
+	var input2 = document.getElementById("SecondCurrency").value;
+
+   
+if(document.getElementById("inputCurrency").value == 'taka'){
+
+   	 if(document.getElementById("outputCurrency").value == 'taka1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*1;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'ruppe1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.88;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'dollar1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.012;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'riyal1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.044;
+
+   	 }
+
+   }
+     
+
+
+if(document.getElementById("inputCurrency").value == 'ruppe'){
+
+   	 if(document.getElementById("outputCurrency").value == 'taka1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*1.14;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'ruppe1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.88;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'dollar1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.013;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'riyal1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.050;
+
+   	 }
+
+   }
+
+
+   if(document.getElementById("inputCurrency").value == 'dollar'){
+
+   	 if(document.getElementById("outputCurrency").value == 'taka1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*84.83;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'ruppe1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*74.41;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'dollar1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.012;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'riyal1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*3.75 ;
+
+   	 }
+
+   }
+
+
+   if(document.getElementById("inputCurrency").value == 'riyal'){
+
+   	 if(document.getElementById("outputCurrency").value == 'taka1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*22.62;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'ruppe1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*19.84;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'dollar1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.27;
+
+   	 }
+   	 else if(document.getElementById("outputCurrency").value == 'riyal1'){
+
+   	 	 document.getElementById("SecondCurrency").value=input1*0.044;
+
+   	 }
+
+   }
+
+   	
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
